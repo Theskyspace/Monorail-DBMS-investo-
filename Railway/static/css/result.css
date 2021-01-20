@@ -1,0 +1,50 @@
+
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;	
+  	background-color: #1f1d1c;
+
+}
+.position{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-30%);
+	letter-spacing: 10px;
+	color: #dcfcc0;
+	font-family: sans-serif;
+	opacity: 0.9;
+	text-align: center;
+}
+h1{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-30%);
+	letter-spacing: 20px;
+	color: #e3fcfc;
+	font-family: sans-serif;
+	opacity: 0.9;
+}
+
+tr{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 100px;
+	color: #02f0c8;
+	font-family: sans-serif;
+	animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #000, 0 0 10px #06b89a}
+  
+  to {
+    text-shadow: 0 0 20px #019179, 0 0 5px #3bf7d8}
+}

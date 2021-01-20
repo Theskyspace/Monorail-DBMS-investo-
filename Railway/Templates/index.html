@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+
+</head>
+<body>
+	<nav>
+		<h1>MONORAIL <span><br>ENQUIRY SYSTEM</span></h1>
+	</nav>
+	
+	<form action="choice" class="main">
+		<select name="Arrival" class="Arrival">
+		  <option value="CHEMBUR">CHEMBUR</option>
+		  <option value="VNP MARG">VNP MARG</option>
+		  <option value="FERTILIZER TOWNSHIP">FERTILIZER TOWNSHIP</option>
+		  <option value="BHARAT PETROLEUM">BHARAT PETROLEUM</option>
+		  <option value="MYSORE COLONY">MYSORE COLONY</option>
+		  <option value="BHAKTI PARK">BHAKTI PARK</option>
+		  <option value="WADALA">WADALA</option>
+		  <option value="GTB NAGAR">GTB NAGAR</option>
+		  <option value="ANTOP HILL">ANTOP HILL</option>
+		  <option value="ACHARYA ATRE NAGAR">ACHARYA ATRE NAGAR</option>
+		  <option value="WADALA BRIDGE">WADALA BRIDGE</option>
+		  <option value="DADAR EAST">DADAR EAST</option>
+		  <option value="NAIGAON">NAIGAON</option>
+		  <option value="AMBEDKAR COLONY">AMBEDKAR COLONY</option>
+		  <option value="MINT COLONY">MINT COLONY</option>
+		  <option value="LOWER PAREL">LOWER PAREL</option>
+		  <option value="SANT GADGE CHOWK">SANT GADGE CHOWK</option>
+		</select>
+
+		<select name="Deparutre" class="Deparutre">
+		  <option value="CHEMBUR">CHEMBUR</option>
+		  <option value="VNP MARG">VNP MARG</option>
+		  <option value="FERTILIZER TOWNSHIP">FERTILIZER TOWNSHIP</option>
+		  <option value="BHARAT PETROLEUM">BHARAT PETROLEUM</option>
+		  <option value="MYSORE COLONY">MYSORE COLONY</option>
+		  <option value="BHAKTI PARK">BHAKTI PARK</option>
+		  <option value="WADALA">WADALA</option>
+		  <option value="GTB NAGAR">GTB NAGAR</option>
+		  <option value="ANTOP HILL">ANTOP HILL</option>
+		  <option value="ACHARYA ATRE NAGAR">ACHARYA ATRE NAGAR</option>
+		  <option value="WADALA BRIDGE">WADALA BRIDGE</option>
+		  <option value="DADAR EAST">DADAR EAST</option>
+		  <option value="NAIGAON">NAIGAON</option>
+		  <option value="AMBEDKAR COLONY">AMBEDKAR COLONY</option>
+		  <option value="MINT COLONY">MINT COLONY</option>
+		  <option value="LOWER PAREL">LOWER PAREL</option>
+		  <option value="SANT GADGE CHOWK" selected="">SANT GADGE CHOWK</option>
+		</select>
+		<input type="time" name="time" value="09:42" class="time">
+		<input type="submit" name="">
+
+	</form>
+
+	{% for item in data %}
+     {{ item }}
+	{% endfor %}
+</body>
+</html>
